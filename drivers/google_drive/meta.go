@@ -19,9 +19,10 @@ type Addition struct {
 }
 
 var config = driver.Config{
-	Name:        "GoogleDrive",
-	OnlyProxy:   true,
-	DefaultRoot: "root",
+	Name:             "GoogleDrive",
+	OnlyProxy:        true,
+	ProxyRangeOption: true,
+	DefaultRoot:      "root",
 }
 
 func init() {

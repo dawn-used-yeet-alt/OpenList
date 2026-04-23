@@ -62,6 +62,8 @@ func (d *GoogleDrive) Link(ctx context.Context, file model.Obj, args model.LinkA
 		Header: http.Header{
 			"Authorization": []string{"Bearer " + d.AccessToken},
 		},
+		Concurrency: 5,
+		PartSize:    5 * 1024 * 1024,
 	}
 	return &link, nil
 }
