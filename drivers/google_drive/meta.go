@@ -20,7 +20,7 @@ type Addition struct {
 
 var config = driver.Config{
 	Name:        "GoogleDrive",
-	OnlyProxy:   true,
+	OnlyProxy:   false,
 	DefaultRoot: "root",
 }
 
